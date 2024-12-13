@@ -7,7 +7,7 @@ const recipeCloseBtn = document.querySelector('.recipe-close-btn');
 //function to get recipes
 const fetchRecipes = async (ourInput) =>{
     recipeContainer.innerHTML="<h2> Fetching Recipes...</h2>";
-    document.getElementById('section').style.height="auto";
+    document.getElementById('section').style.height="100vh";
 try {
     
     const data = await  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${ourInput}`);
